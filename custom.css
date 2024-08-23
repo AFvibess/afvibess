@@ -16,6 +16,18 @@ body *:not(i) {
 	font-family: 'Montserrat Variable';
 }
 
+*::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+}
+*::-webkit-scrollbar-track {
+	background: #111;        /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+	background-color: #FFB800;    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 5px solid #111;  /* creates padding around scroll thumb */
+}
+
 .af-container {
 	max-width: 1200px;
 	margin: 0 auto;
