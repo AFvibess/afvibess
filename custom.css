@@ -21,7 +21,7 @@ body *:not(i) {
 .marquee {
 	display: flex;
 	gap: 50px;
-	animation: marquee 40s linear infinite;
+	animation: marquee 110s linear infinite;
 }
   
   @keyframes marquee {
