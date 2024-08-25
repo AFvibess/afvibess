@@ -39,7 +39,7 @@
 				</a>
 			</div>
 		</div>
-		<img class="absolute top-0 h-full right-0 hidden lg:block" src="/afvibess/assets/images/af-banner.png" alt="AFvibess banner de bienvenida">
+		<img class="absolute top-0 h-full right-0 hidden lg:block" src="/assets/images/af-banner-3.png" alt="AFvibess banner de bienvenida">
 	</section>
 	<section class="bg-[#FFB800] py-[20px] flex gap-[50px] overflow-hidden">
 		<div class="marquee">
@@ -74,7 +74,101 @@
 		</div>
 	</section>
 	<section id="form" class="relative bg-[#111] py-[30px] lg:pt-[80px] lg:pb-[60px]">
-		<h2 class="text-center text-[34px] font-bold max-w-[550px] mx-auto text-white">Llena el siguiente formulario para recibir tu regalo</h2>
+		<div class="af-container px-4">
+			<h2 class="text-center text-[34px] font-bold max-w-[550px] mx-auto text-white">Llena el siguiente formulario para recibir tu regalo</h2>
+			<form class="max-w-[600px] mx-auto" action="https://formspree.io/f/mzzpbobn" method="post">
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="correo">Correo:</label>
+                	<input class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" type="email" id="correo" name="correo" required>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="experiencia">¿Cómo describirías tu experiencia general con las camisetas de AF?</label>
+					<select class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="experiencia" name="experiencia" required>
+						<option value="">Selecciona una opcion</option>
+						<option value="excelente">Excelente</option>
+						<option value="buena">Buena</option>
+						<option value="regular">Regular</option>
+						<option value="mala">Mala</option>
+					</select>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="satisfaccion_calidad">¿Qué tan satisfecho/a estás con la calidad de nuestras camisetas?</label>
+					<select class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="satisfaccion_calidad" name="satisfaccion_calidad" required>
+						<option value="">Selecciona una opcion</option>
+						<option value="muy_satisfecho">Muy satisfecho</option>
+						<option value="satisfecho">Satisfecho</option>
+						<option value="neutral">Neutral</option>
+						<option value="insatisfecho">Insatisfecho</option>
+						<option value="muy_insatisfecho">Muy insatisfecho</option>
+					</select>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="mejora_experiencia">¿Consideras que nuestras camisetas mejoran tu experiencia de entrenamiento?</label>
+					<select class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="mejora_experiencia" name="mejora_experiencia" required>
+						<option value="">Selecciona una opcion</option>
+						<option value="si_mucho">Sí, mucho</option>
+						<option value="si_algo">Sí, algo</option>
+						<option value="neutral">Neutral</option>
+						<option value="no_poco">No, poco</option>
+						<option value="para_nada">Para nada</option>
+					</select>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="beneficios">¿Qué opinas de los beneficios adicionales que ofrecen nuestras camisetas? ¿Qué crees que agregarías?</label>
+                	<textarea class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="beneficios" name="beneficios" required></textarea>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="precio_justificado">¿Sientes que el precio de nuestras camisetas está justificado por la calidad y los beneficios que ofrecen?</label>
+					<select class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="precio_justificado" name="precio_justificado" required>
+						<option value="">Selecciona una opcion</option>
+						<option value="totalmente">Totalmente</option>
+						<option value="justificado">Justificado</option>
+						<option value="neutral">Neutral</option>
+						<option value="no_justificado">No justificado</option>
+						<option value="para_nada">Para nada</option>
+					</select>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="valor_agregado">¿Crees que nuestras camisetas ofrecen un valor agregado en comparación con otras marcas?</label>
+					<select class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="valor_agregado" name="valor_agregado" required>
+						<option value="">Selecciona una opcion</option>
+						<option value="mucho_valor_agregado">Mucho valor agregado</option>
+						<option value="algo_valor_agregado">Algo de valor agregado</option>
+						<option value="neutro">Neutral</option>
+						<option value="poco_valor_agregado">Poco valor agregado</option>
+						<option value="ningun_valor_agregado">Ningún valor agregado</option>
+					</select>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="simbolo_dedicacion">¿Consideras nuestras camisetas como un símbolo de dedicación al entrenamiento y estilo de vida activo?</label>
+					<select class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="simbolo_dedicacion" name="simbolo_dedicacion" required>
+						<option value="">Selecciona una opcion</option>
+						<option value="si_absolutamente">Sí, absolutamente</option>
+						<option value="si_cierta_medida">Sí, en cierta medida</option>
+						<option value="no_seguro">No estoy seguro</option>
+						<option value="no_tanto">No tanto</option>
+						<option value="no_para_nada">No, para nada</option>
+					</select>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="disenos_futuros">¿Qué próximos diseños te gustaría ver disponibles?</label>
+                	<textarea class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="disenos_futuros" name="disenos_futuros" required></textarea>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="reunion_feedback">¿Estarías interesado/a en participar en una breve reunión de 5 minutos para proporcionar feedback más detallado?</label>
+					<select class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="reunion_feedback" name="reunion_feedback" required>
+						<option value="">Selecciona una opcion</option>
+						<option value="si_absolutamente">Sí, absolutamente</option>
+						<option value="no_gracias">No, gracias</option>
+					</select>
+				</div>
+                <div class="flex flex-col gap-[10px] my-[30px]">
+					<label class="text-white" for="comentarios_adicionales">¿Hay algún aspecto adicional que te gustaría mencionar sobre nuestras camisetas o nuestra marca?</label>
+                	<textarea class="p-2 rounded-[5px] text-[#111] focus:invalid:outline-pink-500" id="comentarios_adicionales" name="comentarios_adicionales" required></textarea>
+				</div>
+                <button class="relative block text-center lg:hover:translate-y-[-8px] lg:transition-all text-[16px] font-semibold text-[#111] rounded-[5px] bg-[#FFB800] shadow-[0_0_30px_0_#ffcc48bb] w-full py-[20px]" type="submit">Enviar</button>
+            </form>
+		</div>
 	</section>
 </body>
 </html>
